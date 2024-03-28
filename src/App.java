@@ -4,7 +4,7 @@ import entrada.EntradaConsola;
 import paquete1.Estudiantes;
 import paquete2.Rectangulo;
 import paquete3.EstudiantesTotal;
-import salida.SalidaConsola;
+
 
 public class App {
     public static void main(String[] args) {
@@ -38,7 +38,7 @@ public class App {
     }
         /*-------------ESTUDIANTES-------------- */
         public static void ejecutarEstudiantes() {
-            System.out.println("Ejercicio estudiantes");
+            System.out.println("\nEjercicio estudiantes");
             Estudiantes estudiante1 = new Estudiantes("Alguien", 23, "LCD", new String[]{"Algo", "Análisis"});
             estudiante1.imprimirInformacion();
             
@@ -67,7 +67,7 @@ public class App {
         }
         /*------------ENTRADA-SALIDA------------ */
         public static void ejecutarEntradaSalida() {
-            System.out.println("Ejercicio entrada y salida:");
+            System.out.println("\nEjercicio entrada y salida:");
 
             EntradaConsola.main(new String[]{});           
             
