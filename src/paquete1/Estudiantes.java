@@ -26,9 +26,14 @@ public class Estudiantes {
     }
     //Metodo para printear, uso VOID porque no voy a usar return
     public void imprimirInformacion() {
-        System.out.print("Nombre: " + estudianteNombre +". " + "Edad: " + Edad +". "+ "Carrera: " + Carrera + ". " + "Materias: ");
+      
+        System.out.print("Nombre: " + estudianteNombre +". " + "Edad: " + Edad +". "+ "Carrera: "
+         + Carrera + ". " + "Materias: ");
+      
         for (String materia: Materias){ //Entro al array para imprimir cada cosa
+     
             System.out.print("," + materia);
+      
         }
     }
 }

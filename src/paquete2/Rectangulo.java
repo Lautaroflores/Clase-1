@@ -14,6 +14,7 @@ public class Rectangulo {
     private double Ancho;
     
     public Rectangulo(double largo, double ancho) {
+        
         this.Largo = largo;
         this.Ancho = ancho;
     }
