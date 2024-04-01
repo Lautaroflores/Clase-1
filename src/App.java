@@ -4,7 +4,8 @@ import entrada.EntradaConsola;
 import paquete1.Estudiantes;
 import paquete2.Rectangulo;
 import paquete3.EstudiantesTotal;
-
+import calculadoraSimple.CalculadoraSimple;
+import temperaturaMain.TemperaturaMain;
 
 public class App {
     public static void main(String[] args) {
@@ -15,7 +16,8 @@ public class App {
         System.out.println("2. Rectangulo");
         System.out.println("3. Estudiantes Totales");
         System.out.println("4. Entrada y salida");
-        
+        System.out.println("5. Calculadora simple");
+        System.out.println("6. Conversor de temperatura");
         int opcion = scanner.nextInt(); // Pido que lea el entero que le paso y lo guarde en "opcion"
         switch (opcion) {//Un switch comun. va a la funcion que pido por consola
             case 1:
@@ -29,6 +31,12 @@ public class App {
                 break;
             case 4:
                 ejecutarEntradaSalida();
+                break;
+            case 5:
+                ejecutarCalculadoraSimple();
+                break;
+            case 6:
+                ejecutarConversorTemperatura();
                 break;
             default:
                 System.out.println("Opción no válida");
@@ -71,5 +79,19 @@ public class App {
 
             EntradaConsola.main(new String[]{});           
             
+        }
+
+        /*----------CALCULADORA-SIMPLE---------- */
+        public static void ejecutarCalculadoraSimple(){
+            System.out.println("\nEjercicio calculadora simple");
+
+            CalculadoraSimple.main(new String[]{});
+        }
+
+        /*--------------TEMPERATURA------------- */
+        public static void ejecutarConversorTemperatura(){
+            System.out.println("\nEjercicio conversor de temperatura");
+
+            TemperaturaMain.main(new String[]{});
         }
     }
